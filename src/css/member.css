@@ -1,6 +1,7 @@
 a {
     border: 0px;
     padding: 2px;
+    display:block;
 }
 #all {
     width: 90%;
