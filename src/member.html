@@ -1,7 +1,21 @@
 <html>
 <head>
-    <link href="member.css" type="text/css" rel="Stylesheet" />
+    <link href="css/member.css" type="text/css" rel="Stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript" ></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#headportrait").children().each(function(){
+                $(this).click(function(){
+                    $("#introduce").children().each(function(){
+                        $(this).css("display", "none");
+                    });
+                    var name = $(this).attr("name");
+                    $("#" + name).css("display", "block");
+                });
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="all">
@@ -10,39 +24,52 @@
             <img src="img/membersss.png">
         </div>
         <div id="navigation">
-            <a href="#Home"><img  src="img/home1.png"></a>
-            <a href="#About"><img  src="img/about1.png"></a>
-            <a href="#Member"><img  src="img/members1.png"></a>
-            <a href="#Project"><img  src="img/projects1.png"></a>
+            <img  src="img/home1.png">
+            <img  src="img/about1.png">
+            <img  src="img/members1.png">
+            <img  src="img/projects1.png">
             <input type="image" src="img/search.png"  alt="Submit" />
             <input type="text" name="search">
         </div>
     </div>
     <div id="body">
         <div id="headportrait">
-            <a href="#zjs"><img  src="img/zjs.png" style="display:block;"></a>
-            <a href="#lfj"><img  src="img/lfj.png" style="display:block;"></a>
-            <a href="#cxs"><img  src="img/cxs.png" style="display:block;"></a>
-            <a href="#wyx"><img  src="img/wyx.png" style="display:block;"></a>
+            <a name="zjs"><img  src="img/zjs.png" ></a>
+            <a name="lfj"><img  src="img/lfj.png" ></a>
+            <a name="cxs"><img  src="img/cxs.png"></a>
+            <a name="wyx"><img  src="img/wyx.png" ></a>
+            <a name="zjs"><img  src="img/zjs.png" ></a>
+            <a name="lfj"><img  src="img/lfj.png" ></a>
+            <a name="cxs"><img  src="img/cxs.png"></a>
+            <a name="wyx"><img  src="img/wyx.png" ></a>
         </div>
 
         <div id="introduce">
-            <h2>
-                <a name="zjs">张君帅</a>
-                <p name="zjs">实验室负责人，本实验室最二的家伙。无节操，无下限。</p>
-            </h2>
-            <h2>
-                <a name="lfj">李方杰</a>
-                <p name="zjs">口头禅，你行你来呀,you can you come ya !</p>
-            </h2>
-            <h2>
-                <a name="cxs">陈贤森</a>
-                <p name="zjs">最爱的菜是干煸四季豆，一盘瓜子聊半天，最不爱荔枝肉。</p>
-            </h2>
-            <h2>
-                <a name="wyx">吴永兴</a>
-                <p name="wyx">无耻卖萌货，专业卖萌20年，你值得拥有~</p>
-            </h2>
+            <div id="zjs">
+                <h2>
+                    <a>张君帅</a>
+                    <p>实验室负责人，本实验室最二的家伙。无节操，无下限。</p>
+                </h2>
+            </div>
+            <div id="lfj" style="display: none">
+                <h2>
+                    <a>李方杰</a>
+                    <p>口头禅，你行你来呀,you can you come ya !</p>
+                </h2>
+            </div>
+            <div id="cxs" style="display: none">
+                <h2>
+                    <a>陈贤森</a>
+                    <p>最爱的菜是干煸四季豆，一盘瓜子聊半天，最不爱荔枝肉。</p>
+                </h2>
+            </div>
+            <div id="wyx" style="display: none">
+                <h2>
+                    <a>吴永兴</a>
+                    <p>无耻卖萌货，专业卖萌20年，你值得拥有~</p>
+                </h2>
+            </div>
+
         </div>
     </div>
 
@@ -51,51 +78,7 @@
 
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2><a name="Home">Home</a></h2>
-    <p>This chapter explains ba bla bla</p>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <h2><a name="About">About</a></h2>
-    <p>This chapter explains ba bla bla</p>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <h2><a name="Member">Member</a></h2>
-    <p>This chapter explains ba bla bla</p>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <h2><a name="Project">Projects</a></h2>
-    <p>This chapter explains ba bla bla</p>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 </div>
 </body>
 </html>
