@@ -3,19 +3,6 @@
     <link href="css/member.css" type="text/css" rel="Stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src="js/jquery-1.11.0.min.js" type="text/javascript" ></script>
-    <script type="text/javascript">
-        $(function(){
-            $("#headportrait").children().each(function(){
-                $(this).click(function(){
-                    $("#introduce").children().each(function(){
-                        $(this).css("display", "none");
-                    });
-                    var name = $(this).attr("name");
-                    $("#" + name).css("display", "block");
-                });
-            });
-        });
-    </script>
 </head>
 <body>
 <div id="all">
